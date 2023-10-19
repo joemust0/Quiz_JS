@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <link rel="icon" href="imagens/mobile.png">
+<link rel="stylesheet" href="style.css">
+<script src="scritp.js" async></script>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+    <h2>Questionario Eletronico</h2> 
+</header>
+  <h4 class="home-txt"><span>Seja bem vindo ao nosso site!!</span>
+   <span>Aqui você será submetido há perguntas sobre a área de desenvolvimento de sistemas , e conhecimentos gerais, espero que você se divirta.</span>
+    <span>A mecânica funciona de seguinte forma, conforme você acerta as questões, você vai avançando e ao final do questionário, sai quantas questões você  acertou, e quantas errou.</span>
+</h4>
+<!-- Barra de navegação -->
+<nav> 
+    <div class="div-nav">
+        <a href="index.html"><p>Home</p></a>
+    </div>
+    <div class="div-nav">
+        <button class="start-quiz-nav">Questionario</button>
+    </div>
+    <div class="div-nav">
+        <button class="nav-email">Contato</button>
+    </div>
+    <audio src="audio/lofi.mp3" controls></audio>
+</nav>
+<main class="perg">
+    <div class="container">
+       <div class="qt-container hide">
+        <span class="question">Pergunta</span>
+            <div class="answers-ct">
+            <button class="answer button">respota 1</button>
+            <button class="answer button">respota 2</button>
+            <button class="answer button">respota 3</button>
+            <button class="answer button">respota 4</button>
+            </div>
+       </div>
+            <div class="contorls-container">
+            <button class="start-quiz button">Começar quiz</button>
+            <button class="next-question button hide">Proxima pergunta</button>
+            </div>
+    </div>
+</main>
+<!-- e-mail para contato -->
+<section class="e-mail hide">
+    <h2>Contato</h2>
+    <form class="ctt" action="https://api.staticforms.xyz/submit" method="post">
+
+        <label>Nome</label>
+        <input type="text" name="name" placeholder="Digite seu nome" >
+        <label>E-mail</label>
+        <input type="email" name="email" placeholder="Digite seu e-mail" >
+        <label>Mensagem</label>
+        <textarea name="mssg" cols="30" rows="10" placeholder="Digite sua mensagem" ></textarea>
+        <button type="submit" class="enviar">Enviar</button>
+
+        <input type="hidden" name="accessKey" value="84c16ec4-e951-4488-a4e0-1a983aa79288">
+        <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/Test/index.html">
+    </form>
+</section>
+<footer>
+    <p> Site by Guylherme, Henry, João Felipe, e Paulo</p>
+</footer>
+<audio src="audio/lofi.mp3" autoplay></audio>
+</body>
+</html>
